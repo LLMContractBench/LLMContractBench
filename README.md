@@ -61,26 +61,27 @@ We provide standardized prompt templates used to query LLMs for vulnerability de
 
 ## 6. Results
 
-We provide results for ESBMC-Solidity and multiple LLMs, including:
+We provide results for **ESBMC-Solidity** and multiple LLMs, including:
+- GPT-4o  
+- Google Gemini 2.5-Pro  
+- DeepSeek-R1  
+- CodeLLaMA-7B-Instruct (Solidity)  
+- ESBMC-Solidity 7.9  
 
-GPT-4o "results/openai_gpt-4o_results.csv"
+Metrics reported:
+- **Precision, Recall, F1-score** (per vulnerability category)
+- **Exact Match Accuracy (EMA)**
+- **At Least One Correct (ONE)**
 
-Google Gemini 2.5-Pro
+📂 All outputs are available in the [`results/`](results/) folder.
 
-DeepSeek-R1
+### Available result files
+- [esbmc_7.9_results.csv](results/esbmc_7.9_results.csv)  
+- [openai_gpt-4o_results.csv](results/openai_gpt-4o_results.csv)  
+- [google_gemini-2.5-pro_results.csv](results/google_gemini-2.5-pro_results.csv)  
+- [deepseek_deepseek-chat-v3.1_results.csv](results/deepseek_deepseek-chat-v3.1_results.csv)  
+- [alfredpros_codellama-7b-instruct-solidity_results.csv](results/alfredpros_codellama-7b-instruct-solidity_results.csv)  
+- [google_gemini-2.5-flash-lite_results.csv](results/google_gemini-2.5-flash-lite_results.csv)  
+- [openai_gpt-5-codex_results.csv](results/openai_gpt-5-codex_results.csv)  
 
-CodeLLaMA-7B-Instruct (Solidity)
-
-ESBMC-Solidity 7.9
-
-
-results/esbmc_7.9_results.csv
-
-
-
-results/google_gemini-2.5-pro_results.csv
-
-results/deepseek_deepseek-chat-v3.1_results.csv
-
-results/alfredpros_codellama-7b-instruct-solidity_results.csv
 
