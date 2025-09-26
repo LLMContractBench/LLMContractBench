@@ -63,7 +63,7 @@ We provide standardized prompt templates used to query LLMs for vulnerability de
 
 We provide results for ESBMC-Solidity and multiple LLMs, including:
 
-GPT-4o 
+GPT-4o "results/openai_gpt-4o_results.csv"
 
 Google Gemini 2.5-Pro
 
@@ -72,3 +72,15 @@ DeepSeek-R1
 CodeLLaMA-7B-Instruct (Solidity)
 
 ESBMC-Solidity 7.9
+
+
+results/esbmc_7.9_results.csv
+
+
+
+results/google_gemini-2.5-pro_results.csv
+
+results/deepseek_deepseek-chat-v3.1_results.csv
+
+results/alfredpros_codellama-7b-instruct-solidity_results.csv
+
