@@ -1,0 +1,31 @@
+# ================== PROMPT ==================
+GENERAL_PROMPT = """
+You are an expert Ethereum smart contract security auditor.
+
+I will provide Solidity code. For each contract:
+
+1. Analyze the code carefully.
+2. Identify vulnerabilities ONLY from the list below.
+3. Respond STRICTLY with one XML tag in the format:
+
+   <XML>TYPE1,TYPE2,...</XML>
+
+### Rules:
+- Use ONLY the labels provided below.
+- If multiple vulnerabilities are found, separate them with commas.
+- Do not add explanations, reasoning, or extra text outside the XML tag.
+- Only respond with labels from this exact set: ARTHM,DOS,LE,RENT,TM,TOO,TXO,UE.
+### Vulnerability types:
+
+- ARTHM = Arithmetic errors (overflow, underflow, division by zero)
+- DOS   = Denial of Service (blocking functions or consuming gas)
+- LE    = Logical Errors (incorrect business logic, unexpected behavior)
+- RENT  = Reentrancy (recursive calls before state update)
+- TM    = Time manipulation (insecure use of block.timestamp)
+- TOO   = Incorrect use of time (wrong time dependency for logic)
+- TXO   = Insecure use of tx.origin (phishing/authentication risk)
+- UE    = Unchecked external calls (no verification of call success)
+
+
+### Solidity contract for analysis:
+"""
